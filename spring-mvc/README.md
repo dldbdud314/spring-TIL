@@ -9,3 +9,5 @@
 #### 응답
 - HTTP 응답 메시지 생성 및 편의 기능 제공
 - [HttpServletResponse 보러가기](https://github.com/dldbdud314/spring-web-dev-playground/tree/main/spring-mvc/servlet/src/main/java/hello/servlet/basic/response)
+
+📌 [extras](https://velog.io/@dldbdud314/%EC%84%B9%EC%85%981-%EC%9B%B9-%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98-%EC%9D%B4%ED%95%B4)
