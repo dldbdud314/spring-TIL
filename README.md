@@ -1,2 +1,4 @@
-# spring-web-dev-playground
-Java Spring 웹개발 연습장
+## Java Spring 웹개발 학습 공간
+
+### Contents
+1. Spring-MVC
