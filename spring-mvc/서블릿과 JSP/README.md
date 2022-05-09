@@ -25,4 +25,6 @@
 - Java 코드, 데이터 조회(repository 접근) 등 **너무 많은 역할을 담당한다**
 - 유지보수 헬 파티 예약💩
 
+📌 [관련 프로젝트 리뷰](https://velog.io/@dldbdud314/%EA%B0%91%EC%9E%90%EA%B8%B0-JSP-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EB%A5%BC-%EB%8F%8C%EC%95%84%EB%B3%B4%EB%8B%88)
+
 3. 그래서 등장한 게 **MVC 패턴**
