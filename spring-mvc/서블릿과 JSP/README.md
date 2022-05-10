@@ -1,4 +1,4 @@
-## 서블릿과 JSP
+## 서블릿과 JSP, MVC 패턴
 ### 서블릿
 - Java 코드에 html 넣기<br>
 👉 _화면에 뿌릴 html 코드를 개발자가 java 코드로 한땀한땀 적는다!_
@@ -28,3 +28,17 @@
 📌 [관련 프로젝트 리뷰](https://velog.io/@dldbdud314/%EA%B0%91%EC%9E%90%EA%B8%B0-JSP-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EB%A5%BC-%EB%8F%8C%EC%95%84%EB%B3%B4%EB%8B%88)
 
 3. 그래서 등장한 게 **MVC 패턴**
+
+### MVC 패턴
+비즈니스 로직과 뷰 렌더링의 분리 👉 컨트롤러와 뷰로 역할 분리
+![image](https://user-images.githubusercontent.com/57944099/167625676-05ede5d6-b971-4bf6-bc22-b913631c6ebc.png)
+
+#### MVC 패턴의 적용
+- [Controller](https://github.com/dldbdud314/spring-web-dev-playground/tree/main/spring-mvc/servlet/src/main/java/hello/servlet/web/servletmvc)
+- [View](https://github.com/dldbdud314/spring-web-dev-playground/tree/main/spring-mvc/servlet/src/main/webapp/WEB-INF/views)
+
+### MVC 패턴의 한계
+- 컨트롤러와 뷰의 분리는 성공했지만
+- **공통 처리가 어렵다**는 단점
+
+👉 그래서 도입한 게 **프론트 컨트롤러 패턴** (일종의 수문장 역할)
