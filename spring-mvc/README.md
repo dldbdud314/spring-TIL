@@ -1,4 +1,6 @@
 ### Spring MVC
-1. [서블릿 알아보기](https://github.com/dldbdud314/spring-web-dev-playground/tree/main/spring-mvc/%EC%84%9C%EB%B8%94%EB%A6%BF)
-2. [서블릿과 JSP, MVC 패턴 알아보기](https://github.com/dldbdud314/spring-web-dev-playground/tree/main/spring-mvc/%EC%84%9C%EB%B8%94%EB%A6%BF%EA%B3%BC%20JSP%2C%20MVC%20%ED%8C%A8%ED%84%B4)
-3. [프론트 컨트롤러 알아보기](https://github.com/dldbdud314/spring-web-dev-playground/tree/main/spring-mvc/%ED%94%84%EB%A1%A0%ED%8A%B8%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC)
+
+1. [서블릿 알아보기](https://github.com/dldbdud314/spring-web-dev-playground/blob/main/spring-mvc/%EC%84%9C%EB%B8%94%EB%A6%BF/README.md)
+2. [서블릿과 JSP, MVC 패턴 알아보기](https://github.com/dldbdud314/spring-web-dev-playground/blob/main/spring-mvc/%EC%84%9C%EB%B8%94%EB%A6%BF%EA%B3%BC%20JSP%2C%20MVC%20%ED%8C%A8%ED%84%B4/README.md)
+3. [프론트 컨트롤러 알아보기](https://github.com/dldbdud314/spring-web-dev-playground/blob/main/spring-mvc/%ED%94%84%EB%A1%A0%ED%8A%B8%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC/README.md)
+4. [스프링 MVC 구조 설명](https://github.com/dldbdud314/spring-web-dev-playground/blob/main/spring-mvc/%EC%8A%A4%ED%94%84%EB%A7%81MVC%20%EA%B5%AC%EC%A1%B0%20%EC%9D%B4%ED%95%B4/README.md)
