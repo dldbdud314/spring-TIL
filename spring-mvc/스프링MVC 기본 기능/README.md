@@ -18,7 +18,7 @@
   - [Controller 파라미터 목록 ref](https://docs.spring.io/spring-framework/docs/current/reference/html/web.html#mvc-ann-arguments)
   - [Controller 응답 값 목록 ref](https://docs.spring.io/spring-framework/docs/current/reference/html/web.html#mvc-ann-return-types)
 
-### HTTP 요청 파라미터 - 쿼리 파라미터, HTML Form
+### HTTP 요청 파라미터 - 쿼리 파라미터+HTML Form, `@RequestParam`
 - GET 쿼리 파라미터, POST HTML Form 방식은 동일하게 요청 파라미터(request parameter) 조회 -> 형식: `username=aaa&age=20`
 
 📌 [요청 파라메터 코드](https://github.com/dldbdud314/spring-web-dev-playground/blob/main/spring-mvc/spingmvc/src/main/java/hello/spingmvc/basic/request/RequestParamController.java)
