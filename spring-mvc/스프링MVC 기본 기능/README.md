@@ -88,3 +88,6 @@ public String requestBodyJsonV4(HttpEntity<HelloData> httpEntity) {
 
 ### HTTP 응답 - HTTP API, 메시지 바디에 직접 입력
 📌 [HTTP 응답(HTTP API) 코드](https://github.com/dldbdud314/spring-web-dev-playground/blob/main/spring-mvc/spingmvc/src/main/java/hello/spingmvc/basic/response/ResponseBodyController.java)
+- `@ResponseBody` 클래스, 메소드 레벨 설정 가능
+- `@RestController` = `@Controller` + `@ResponseBody` -> RestAPI
+- `HttpEntity` 사용하면 조건따라 Status 코드 지정 가능, 공통으로 적용할거면 `@ResponseStatus(HTTPStatus.OK)`로 지정 가능
