@@ -4,10 +4,9 @@ import com.tobyspring.app.domain.User;
 
 import java.sql.*;
 
-public class UserDao {
-    public void add(User user) throws ClassNotFoundException, SQLException {
-        Connection c = DriverManager.getConnection(
-                "jdbc:h2:~/tobyspring", "sa", "");
+public abstract class UserDao {
+    public void add(User user) throws SQLException {
+        Connection c = getConnection();
 
         PreparedStatement ps = c.prepareStatement(
                 "insert into users(id, name, password) values (?, ?, ?)"
@@ -22,9 +21,8 @@ public class UserDao {
         c.close();
     }
 
-    public User get(String id) throws ClassNotFoundException, SQLException {
-        Connection c = DriverManager.getConnection(
-                "jdbc:h2:~/tobyspring", "sa", "");
+    public User get(String id) throws SQLException {
+        Connection c = getConnection();
 
         PreparedStatement ps = c.prepareStatement(
                 "select * from users where id = ?");
@@ -43,4 +41,8 @@ public class UserDao {
 
         return user;
     }
+
+    public abstract Connection getConnection() throws SQLException;
+        //return DriverManager.getConnection("jdbc:h2:~/tobyspring", "sa", "");
+
 }

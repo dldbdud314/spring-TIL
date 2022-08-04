@@ -1,5 +1,6 @@
 package com.tobyspring.app;
 
+import com.tobyspring.app.dao.DUserDao;
 import com.tobyspring.app.dao.UserDao;
 import com.tobyspring.app.domain.User;
 import org.springframework.boot.SpringApplication;
@@ -12,10 +13,10 @@ public class AppApplication {
 
 	public static void main(String[] args) throws SQLException, ClassNotFoundException {
 
-		UserDao dao = new UserDao();
+		UserDao dao = new DUserDao();
 
 		User user = new User();
-		user.setId("yylee");
+		user.setId("yylee2");
 		user.setName("유영");
 		user.setPassword("1234");
 
