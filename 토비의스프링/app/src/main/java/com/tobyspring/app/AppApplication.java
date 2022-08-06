@@ -1,10 +1,11 @@
 package com.tobyspring.app;
 
-import com.tobyspring.app.dao.ConnectionMaker;
-import com.tobyspring.app.dao.DConnectionMaker;
+import com.tobyspring.app.dao.DaoFactory;
 import com.tobyspring.app.dao.UserDao;
 import com.tobyspring.app.domain.User;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import java.sql.SQLException;
 
@@ -13,11 +14,12 @@ public class AppApplication {
 
 	public static void main(String[] args) throws SQLException{
 
-		ConnectionMaker connectionMaker = new DConnectionMaker();
-		UserDao dao = new UserDao(connectionMaker); //런타임 시 UserDao-ConnectionMaker 의존관계 설정
+		ApplicationContext context = new AnnotationConfigApplicationContext(DaoFactory.class);
+
+		UserDao dao = context.getBean("userDao", UserDao.class); //생성 방법 결정 및 생성
 
 		User user = new User();
-		user.setId("yylee3");
+		user.setId("yylee5");
 		user.setName("유영");
 		user.setPassword("1234");
 
@@ -31,8 +33,6 @@ public class AppApplication {
 		System.out.println(user2.getPassword());
 
 		System.out.println(user2.getId() + " 조회 성공");
-
-		//SpringApplication.run(AppApplication.class, args);
 	}
 
 }
